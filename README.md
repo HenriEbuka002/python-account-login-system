@@ -35,4 +35,4 @@ A simple command-line program written in Python that simulates creating an accou
 
 ## Author
 
-Your Name | Computer Science student learning Python
+Irueze Henry Ebuka | Computer Science student learning Python
