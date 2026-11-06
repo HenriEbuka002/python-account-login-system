@@ -9,28 +9,30 @@ while True:
         break
 
 while True:
-    age =input("Enter your age : ")
-    if not age.isdigit() :
-        print("age can only contain number")
+    age = input("Enter your age : ")
+    if not age.isdigit():
+        print("age can only contain numbers")
         continue
     ag = int(age)
-    if ag >= 18 :
-        print("Done") 
-        break
-    elif ag >= 12 :
-        print("You are  currently creating a junior account")
-        break
-    elif ag >= 99:
-        print("oops you are too old , you cannot create an account")
-    else:
-        print("oops you are too young, you cannot create an account ")
+    if ag >= 99:
+        print("oops you are too old, you cannot create an account")
         exit()
+    elif ag >= 18:
+        print("Done")
+        break
+    elif ag >= 12:
+        print("You are currently creating a junior account")
+        break
+    else:
+        print("oops you are too young, you cannot create an account")
+        exit()
+
 while True:
     password = input("Create a password :")
     if len(password) >= 6:
         break
     else:
-        print("password can only contain more than 6 charaters")
+        print("password can only contain 6 or more charaters")
         print("try again")
 else:
     print("Account created successful")
